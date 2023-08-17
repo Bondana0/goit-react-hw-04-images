@@ -63,7 +63,7 @@ export const App = () => {
   const onPicture = index => {
     const picture = images.filter(image => image.id === +index);
 
-    onClickModalOpen();
+    onClickModalOpen(largeImageURL);
     setLargeImageURL(picture[0].largeImageURL);
   };
 
